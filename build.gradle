@@ -165,8 +165,8 @@ curse {
     dependsOn 'reobf'
     onlyIf { return project.hasProperty('ee3_curseforge_apikey') }
 
-    projectId = project.ee3_curseforge_projectid
-    apiKey = project.ee3_curseforge_apikey
+    projectId = 0
+    apiKey = 0
     changelog = project.hasProperty('changelog') ? project.changelog : ''
     releaseType = config.release_type
 
